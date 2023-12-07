@@ -26,6 +26,10 @@
   font-style: normal;
   font-display: swap;
 }
+:root {
+  --desc: #333333;
+}
+
 *,
 *::before,
 *::after {
@@ -36,10 +40,17 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: var(--desc);
 }
 
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 }/*# sourceMappingURL=main.css.map */
