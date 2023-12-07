@@ -1,0 +1,50 @@
+.header {
+    font-size: 14px;
+}
+.header__info {
+    display: none;
+    margin: 18px 0;
+}
+.header__info--address,
+.header__info--timeline,
+.header__info--phone {
+    display: flex;
+
+    & a {
+        color: var(--desc);
+        opacity: .7;
+        transition: ease .2s;
+        margin-left: 6px;
+    }
+    & a:hover {
+        opacity: 1;
+    }
+    & svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+.header__info--timeline {
+    padding-left: 20px;
+    margin-left: 26px;
+    border-left: 1px solid rgba(51, 51, 51, .10);
+}
+.header__info--phone {
+    margin-left: auto;
+}
+.header__phone--number {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .header__info {
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header__info {
+        font-size: 16px;
+    }
+}
