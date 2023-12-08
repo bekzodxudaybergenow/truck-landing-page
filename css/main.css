@@ -28,6 +28,8 @@
 }
 :root {
   --desc: #333333;
+  --white: #fff;
+  --blue: #4762FF;
 }
 
 *,
@@ -45,7 +47,7 @@ body {
 
 .container {
   max-width: 1140px;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -53,6 +55,25 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 179px;
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .header {
   font-size: 14px;
 }
