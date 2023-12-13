@@ -30,6 +30,18 @@ a {
     border-radius: 5px;
     color: var(--white);
     background-color: var(--blue);
+    transition: opacity .7s ease;
+
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.img {
+    width: 100%;
+    height: auto;
 }
 @media screen and (min-width: 768px) {
     .container {
