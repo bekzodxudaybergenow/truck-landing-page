@@ -129,6 +129,9 @@
     .header__menu--btn {
         display: flex;
     }
+    .header__menu--btn {
+        max-width: 180px;
+    }
     .header__sidebar,
     .header__sidebar.active,
     .header__menu--nav.header__menu--sidebar {
