@@ -363,9 +363,14 @@ a {
   }
 }
 .advantages {
-  margin-top: 40px;
+  padding: 40px 0;
   text-align: center;
   font-size: 14px;
+}
+
+.advantages__row {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__content {
@@ -373,13 +378,19 @@ a {
 }
 
 .advantages__content--title {
+  max-width: 648px;
   font-size: 34px;
   margin-bottom: 12px;
   line-height: 38px;
 }
 
 .advantages__content--desc {
+  max-width: 540px;
   font-size: 14px;
+}
+
+.advantages__list {
+  list-style: none;
 }
 
 .advantages__list--item {
@@ -407,4 +418,74 @@ a {
 .advantages__item--img {
   max-width: 300px;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__content--title,
+  .advantages__content--desc {
+    margin: 0 auto;
+  }
+  .advantages__content--title {
+    margin-bottom: 18px;
+  }
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .advantages__list--item {
+    max-width: 350px;
+  }
+  .advantages__list--item + * {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .advantages {
+    margin: 140px 0 78px;
+  }
+  .advantages__list--item {
+    display: flex;
+    position: relative;
+    min-width: 450px;
+    min-height: 287px;
+    padding: 25px 28px;
+    z-index: 1;
+  }
+  .advantages__list--item:nth-child(1) img {
+    width: 340px;
+    height: 271px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    right: -32px;
+  }
+  .advantages__list--item:nth-child(4) img {
+    width: 219px;
+    height: 174px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .advantages__item--content {
+    text-align: left;
+  }
+  .advantages__item--title {
+    max-width: 366px;
+    font-size: 24px;
+  }
+  .advantages__item--desc {
+    max-width: 253px;
+    font-size: 15px;
+  }
+  .advantages__item--img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .advantages__list--item {
+    min-width: 505px;
+  }
 }/*# sourceMappingURL=main.css.map */
