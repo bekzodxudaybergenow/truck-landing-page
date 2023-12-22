@@ -481,7 +481,7 @@ a {
   }
   .advantages__list--item {
     display: flex;
-    min-width: 450px;
+    max-width: 505px;
     min-height: 287px;
     padding: 25px 28px;
     z-index: 1;
@@ -490,10 +490,17 @@ a {
     bottom: 0;
     right: 20px;
     z-index: -1;
-    background-color: lightcoral;
   }
   .advantages__item--content {
     max-width: 360px;
     text-align: left;
+  }
+  .advantages__item--title {
+    max-width: 340px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .advantages__item--desc {
+    max-width: 222px;
   }
 }/*# sourceMappingURL=main.css.map */
