@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Truck Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -139,7 +140,23 @@
                 </div>
             </div>
         </div>
+        <div class="images">
+            <div class="container">
+                <div class="images__row">
+                    <h1 class="title images--title">Фоточки</h1>
+                    <div class="swiper images__swiper">
+                        <div class="swiper-wrapper images__wrapper">
+                          <div class="swiper-slide images__slide">Slide 1</div>
+                          <div class="swiper-slide images__slide">Slide 2</div>
+                          <div class="swiper-slide images__slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
