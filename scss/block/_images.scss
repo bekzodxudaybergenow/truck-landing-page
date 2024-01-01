@@ -33,3 +33,24 @@
         opacity: 1;
     }
 }
+@media screen and (min-width: 1024px) {
+    .images {
+        padding: 56px 87px;
+    }
+    .images--title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    .swiper.images__swiper {
+        height: 500px;
+        padding-bottom: 40px;
+    }
+    .images__pagination {
+        bottom: 0 !important;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .swiper.images__swiper {
+        height: 598px;
+    }
+}
