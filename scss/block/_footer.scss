@@ -1,0 +1,109 @@
+.footer {
+    padding: 50px 0 20px;
+    background-color: var(--footer-bg);
+}
+.footer__logo {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin-left: -12px;
+    margin-bottom: 40px;
+    transition: opacity ease-in-out .2s;
+
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.footer__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.footer__nav--link {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white);
+    transition: opacity ease-in-out .2s;
+
+    & + * {
+        margin-top: 8px;
+    }
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.footer__contact--whatsup,
+.footer__contact--address  {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+
+}
+.footer__social--facebook,
+.footer__soacial--instagram {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+.footer__bottom--desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #D9DBE1;
+    padding-top: 18px;
+    border-top: 0.7px solid #474747;
+}
+
+@media screen and (min-width: 425px) {
+    .footer__main {
+        max-width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 40px;
+        margin-bottom: 40px;
+    }
+    .footer__logo {
+        width: 100%;
+    }
+    .footer__nav {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 600px) {
+    .footer__main {
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 820px) {
+    .footer__main {
+        max-width: 100%;
+        margin-bottom: 67px;
+    }
+    .footer__logo {
+        width: 200px;
+    }
+    .footer__contact--whatsup {
+        margin: 20px 0 15px;
+    }
+    .footer__social--facebook {
+        margin-bottom: 15px;
+    }
+    .footer__contact--address,
+    .footer__soacial--instagram {
+        margin: 0;
+    }
+
+}
